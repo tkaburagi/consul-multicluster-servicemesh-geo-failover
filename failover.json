@@ -1,0 +1,9 @@
+{
+  "Name": "corpx",
+  "Service": {
+    "Service": "corpx",
+    "Failover": {
+      "Datacenters": ["dc-1", "dc-3"]
+    }
+  }
+}

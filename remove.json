@@ -1,0 +1,7 @@
+{
+  "Datacenter": "dc-3",
+  "Node": "gke-consul-mesh-gateway--default-pool-2cc94f6b-dvrv",
+  "ServiceID": "corpx-corpx"
+}
+
+//curl --request PUT --data @remove.json http://34.121.96.110/v1/catalog/deregister
