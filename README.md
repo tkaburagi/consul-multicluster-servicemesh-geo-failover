@@ -103,3 +103,11 @@ consul config write terminating-gateway/terminating-gateway.hcl
 <kbd>
   <img src="https://github-image-tkaburagi.s3-ap-northeast-1.amazonaws.com/my-github-repo/france.png">
 </kbd>
+
+## Trying faileover
+```shell script
+gcloud container clusters get-credentials consul-mesh-gateway-cluster-1 --zone us-central1-c --project se-kabu
+kc delete -f corp-gke-1.yaml -n=multicluster-servicemesh
+```
+
+access again!
