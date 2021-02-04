@@ -1,5 +1,5 @@
 <kbd>
-  <img src="https://github-image-tkaburagi.s3-ap-northeast-1.amazonaws.com/my-github-repo/multicluster-servicemesh.png">
+  <img src="https://github-image-tkaburagi.s3-ap-northeast-1.amazonaws.com/my-github-repo/geo-failover.png">
 </kbd>
 
 ## setup
@@ -19,7 +19,7 @@ gcloud container clusters create consul-mesh-gateway-cluster-3 --num-nodes=3
 ```
 
 ```shell script
-gcloud container clusters get-credentials consul-mesh-gateway-cluster-1 --zone asia-northeast1-a --project se-kabu
+gcloud container clusters get-credentials consul-mesh-gateway-cluster-1 --zone us-central1-c --project se-kabu
 kc apply -f ns.yaml
 helm install -f helm/consul-values-gke-1.yaml consul hashicorp/consul  --wait -n multicluster-servicemesh
 kc get secret consul-federation -o yaml -n multicluster-servicemesh > consul-federation-secret.yaml
